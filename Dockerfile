@@ -1,6 +1,6 @@
 FROM centos:centos7
 MAINTAINER Ethan 20151022
-
+RUN yum install wget -y
 RUN wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 RUN yum update -y
 RUN rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
